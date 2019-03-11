@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
+
+#import "subTestObject.h"
 
 @interface ViewController ()
 
@@ -16,8 +20,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    
+    
 }
+
+- (void)getMethodName {
+    // 创建C函数指针 用来接收IMP
+    void(*function)(id,SEL,NSObject*);
+    
+    function = (void(*)(id, SEL, NSObject*)) [self methodForSelector:@selector(readView:)];
+    
+    function(self,@selector(readView:),UIColor.redColor);
+}
+- (void)readView:(UIColor *)color{
+    self.view.backgroundColor = [UIColor redColor];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+   
+//     [self getMethodName];
+
+    // IMP 的 Block 实现
+    subTestObject *testOB = [[subTestObject alloc] init];
+    [testOB changeTestMethod];
+}
+
+
+
+
+
+
+
+
+
 
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E321478322365847001B0EDF /* subTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E321478222365847001B0EDF /* subTestObject.m */; };
 		E3FF6ADE2233F7D200830D2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FF6ADD2233F7D200830D2D /* AppDelegate.m */; };
 		E3FF6AE12233F7D200830D2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FF6AE02233F7D200830D2D /* ViewController.m */; };
 		E3FF6AE42233F7D200830D2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3FF6AE22233F7D200830D2D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		E3FF6AEC2233F7D400830D2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FF6AEB2233F7D400830D2D /* main.m */; };
 		E3FF6AF62233F7D400830D2D /* RunTimeLearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FF6AF52233F7D400830D2D /* RunTimeLearnTests.m */; };
 		E3FF6B012233F7D500830D2D /* RunTimeLearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FF6B002233F7D500830D2D /* RunTimeLearnUITests.m */; };
+		E3FF6B272236578600830D2D /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FF6B262236578600830D2D /* TestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E321478122365847001B0EDF /* subTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = subTestObject.h; sourceTree = "<group>"; };
+		E321478222365847001B0EDF /* subTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = subTestObject.m; sourceTree = "<group>"; };
 		E3FF6AD92233F7D200830D2D /* RunTimeLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTimeLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FF6ADC2233F7D200830D2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3FF6ADD2233F7D200830D2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		E3FF6AFC2233F7D400830D2D /* RunTimeLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunTimeLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FF6B002233F7D500830D2D /* RunTimeLearnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeLearnUITests.m; sourceTree = "<group>"; };
 		E3FF6B022233F7D500830D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3FF6B252236578600830D2D /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		E3FF6B262236578600830D2D /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		E3FF6ADB2233F7D200830D2D /* RunTimeLearn */ = {
 			isa = PBXGroup;
 			children = (
+				E3FF6B2422363E3400830D2D /* Runtime介绍 */,
 				E3FF6ADC2233F7D200830D2D /* AppDelegate.h */,
 				E3FF6ADD2233F7D200830D2D /* AppDelegate.m */,
 				E3FF6ADF2233F7D200830D2D /* ViewController.h */,
@@ -130,6 +137,17 @@
 				E3FF6B022233F7D500830D2D /* Info.plist */,
 			);
 			path = RunTimeLearnUITests;
+			sourceTree = "<group>";
+		};
+		E3FF6B2422363E3400830D2D /* Runtime介绍 */ = {
+			isa = PBXGroup;
+			children = (
+				E3FF6B252236578600830D2D /* TestObject.h */,
+				E3FF6B262236578600830D2D /* TestObject.m */,
+				E321478122365847001B0EDF /* subTestObject.h */,
+				E321478222365847001B0EDF /* subTestObject.m */,
+			);
+			path = "Runtime介绍";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +282,8 @@
 			files = (
 				E3FF6AE12233F7D200830D2D /* ViewController.m in Sources */,
 				E3FF6AEC2233F7D400830D2D /* main.m in Sources */,
+				E321478322365847001B0EDF /* subTestObject.m in Sources */,
+				E3FF6B272236578600830D2D /* TestObject.m in Sources */,
 				E3FF6ADE2233F7D200830D2D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
